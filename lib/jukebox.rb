@@ -18,7 +18,7 @@ def help
   puts "- exit : exits this program"
 end
 
-def list 
+def list(songs)
   songs.length.times do |i|
     puts "#{i + 1}. #{songs[i]}"
   end
