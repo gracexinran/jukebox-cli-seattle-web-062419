@@ -17,3 +17,11 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
 end
+
+def play(num)
+  songs.length.times do |i|
+    puts "#{i + 1}. #{songs[i]}"
+  end 
+  
+  songs[num - 1]
+end
