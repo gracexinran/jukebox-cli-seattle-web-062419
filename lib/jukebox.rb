@@ -23,3 +23,5 @@ def list(songs)
     puts "#{i + 1}. #{songs[i]}"
   end
 end
+
+def play(song)
