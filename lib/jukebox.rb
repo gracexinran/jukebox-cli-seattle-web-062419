@@ -44,14 +44,13 @@ def run(songs)
   help
   puts "Please enter a command:"
   command = gets.strip 
-  until command == "exit"
-    exit_jukebox
-  end 
   if command == "list"
     list(songs)
   elsif command == "play"
     play(songs)
   elsif command == "help"
     help
+  elsif command == "exit"
+    exit_jukebox
   end
 end
